@@ -1,7 +1,7 @@
 #include "simulation.h"
 
-#include "cuda/simulation.cuh"
-#include "cuda/prediction_step.cuh"
+#include "cuda/simulation.h"
+#include "cuda/prediction_step.h"
 
 #include <iostream>
 #include <cstdlib>

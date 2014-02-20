@@ -1,5 +1,5 @@
 #include <cuda.h>
-#include "simulation.cuh"
+#include "simulation.h"
 
 namespace Cuda
 {

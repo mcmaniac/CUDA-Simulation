@@ -1,4 +1,4 @@
-#include "prediction_step.cuh"
+#include "prediction_step.h"
 
 namespace Cuda
 {
