@@ -36,5 +36,6 @@ int main()
             << endl;
     }
 
+    delete[] p;
     return EXIT_SUCCESS;
 }

@@ -16,6 +16,11 @@ Simulation::Simulation(Particle const *particles, int N, float dt)
     Cuda::store(d_particles, particles, size);
 }
 
+Simulation::~Simulation()
+{
+    Cuda::cleanup(d_particles);
+}
+
 int Simulation::readOut(Particle* &result) const
 {
     result = (Particle*) malloc(size);

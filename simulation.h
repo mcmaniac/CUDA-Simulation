@@ -8,6 +8,7 @@ class Simulation
     public:
 
         Simulation(Particle const *particles, int N, float dt);
+        ~Simulation();
 
         int readOut(Particle* &particles) const;
 

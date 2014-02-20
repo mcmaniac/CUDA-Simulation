@@ -12,6 +12,12 @@ void store(Particle* &dev, Particle const *particles, size_t size)
 }
 
 __host__
+void cleanup(Particle *dev)
+{
+    cudaFree(dev);
+}
+
+__host__
 void read_out(Particle *dev, Particle* &res, size_t size)
 {
     cudaMemcpy(res, dev, size, cudaMemcpyDeviceToHost);
